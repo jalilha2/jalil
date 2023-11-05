@@ -316,7 +316,7 @@ def menu():
                                         time.sleep(1)
                                         menu()
                                 clear()
-				print(' All method working ')
+			print(' All method working ')
 				linex()
 				print(' [1] METHOD (NEW ID)')
 				print(' [2] METHOD (MIX)')
