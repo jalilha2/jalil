@@ -293,30 +293,30 @@ def approval():
       #approval()
   except Exception as error:
     print(error)
-    def menu():
-    try:
-    approval()
-    #clear()
-    x = ("***")
-    if x == ("***"):
-    print('[1] CRACK FILE ')
-    print('[2] RANDOM CRACK')
-    print('[3] CREAT FILE')
-    print('[0] EXIT ')
-    linex()
-    xd=input(' CHOOSE AN OPTION: ')
-    #os.system('xdg-open ')
-    if xd in ['1','01']:
-    clear()
-    
-    print(' PUT FILE EXAMPLE :  /sdcard/jalil.txt.etc..')
-    linex()
-    file = input(' PUT FILE PATH\033[1;37m: ')
-    try:
-    fo = open(file,'r').read().splitlines()
-    except FileNotFoundError:
-    print(' FILE LOCATION NOT FOUND ')
-    time.sleep(1)
+def menu():
+	try:
+		approval()
+		#clear()
+x = ("***")
+if x == ("***"):
+	print('[1] CRACK FILE ')
+	print('[2] RANDOM CRACK')
+	print('[3] CREAT FILE')
+	print('[0] EXIT ')
+	linex()
+	xd=input(' CHOOSE AN OPTION: ')
+	#os.system('xdg-open ')
+if xd in ['1','01']:
+	clear()
+	
+	print(' PUT FILE EXAMPLE :  /sdcard/jalil.txt.etc..')
+	linex()
+	file = input(' PUT FILE PATH\033[1;37m: ')
+	try:
+		fo = open(file,'r').read().splitlines()
+	except FileNotFoundError:
+	print(' FILE LOCATION NOT FOUND ')
+time.sleep(1)
     menu()
     clear()
     print(' All method working ')
