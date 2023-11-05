@@ -227,84 +227,15 @@ cps=[]
 pcp=[]
 id=[]
 tokenku=[]
-import pycurl
-from io import BytesIO
-def get_response(url):
-    response_buffer = BytesIO()
-
-    curl = pycurl.Curl()
-    curl.setopt(curl.URL, url)
-    curl.setopt(curl.WRITEDATA, response_buffer)
-
-    try:
-        curl.perform()
-    except pycurl.error as e:
-        return f"Error: {e}"
-
-    response = response_buffer.getvalue().decode('utf-8')
-    curl.close()
-
-    return response
-
-def remove_symbols_and_spaces(input_string):
-    cleaned_string = re.sub(r'[^a-zA-Z0-9#]', '', input_string)
-    return cleaned_string
-    
-def approval():
-  os.system('clear')
-  print(logo)
-  import platform
-  uuid = str(os.geteuid())+"#"+ platform.uname().machine+platform.uname().version+platform.uname().release
-  id = remove_symbols_and_spaces(uuid)
-  k1,k2,k3,k4=id[:4],id[3:6],id[4:9],id[9:]
-  intuid=int(id.split("#")[0])
-  pref=str((intuid-104729)*2-37+(1-2**7))
-  suff=str((intuid-523217)%104729)
-  realid=(suff+k3+k1+k4+k2+pref).encode().hex()
-  try:
-    httpCaht = get_response('https://raw.githubusercontent.com/jalilha/jalil/main/jalil.txt')
-    if realid in httpCaht:
-      #print("\3[1;32m YOUR KEY IS APPROVED.")
-      #msg = str(os.geteuid())
-      pass
-    else:
-      print("\33[1;32m YOUR KEY :\x1b[38;5;46m "+id)
-      print('\33[1;37m ====================================================')
-      print("\33[1;37m ====================================================")
-      print("\33[1;36m NOTE:- THIS TOOL IS PAID \n YOU HAVE TO PAY FOR APPROVAL FIRST .")
-      print('\33[1;37m ====================================================')
-      print (" \33[37;41m\t WELCOME TO JALIL TOOL \33[0;m")
-      print('\33[1;37m ====================================================')
-
-      print ("\33[1;37m SEND 500DA (FOR 15 DAYS APPROVEL)")
-      print('\33[1;37m ====================================================')
-      print ("\33[1;37m SEND 3 $ usd (FOR 15 DAYS APPROVEL)")
-      print('\33[1;37m ====================================================')
-      print ("\33[1;37m SEND 900DA (FOR 30 DAYS APPROVEL)")
-      print('\33[1;37m ====================================================')
-      print ("\33[1;37m SEND 5 $ usd (FOR 30 DAYS APPROVEL)")
-      print('\33[1;37m ====================================================')
-      print ("\33[1;37m JALIL PHONE (+213676980481)")
-      print ("\33[37;41m\t SUBSCRIBE TO THE BEST TOOL NOW  \33[0;m")
-      input(' IIF YOU ARE FREE USER THEN DONT PRESS ENTER')
-      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('xdg-open https://wa.me/message/213676980481'+tks)
-      sys.exit()
-      #time.sleep(1)
-      #approval()
-  except Exception as error:
-    print(error)                        
-
 
 def menu():
-        try:
-                clear()
-        #       chk()
-                x = ("sex")
-                if x == ("sex"):
-                        print(' [1] File cloning\n [2] Create ids file\n [3] Public cloning\n [4] Random number cloning\n [5] Random gmail crack\n [0] Exit menu')
-                        linex()
-                        xd=input(' Choose an option: ')
-                        if xd in ['1','01']:
+			clear()
+		#	linex()
+			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [4] INDIA RANDOM  \n [0] Exit menu')
+			linex()
+			xd=input(' Choose an option: ')
+		#	os.system('xdg-open https://www.facebook.com/dr.paigham')
+			if xd in ['1','01']:
 				clear()
 				print(' Put file example:  /sdcard/File.txt  etc..')
 				linex()
