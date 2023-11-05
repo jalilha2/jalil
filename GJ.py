@@ -303,7 +303,6 @@ def menu():
                 x = ("sex")
                 if x == ("sex"):
                         print(' [1] File cloning\n [2] Create ids file\n [3] Public cloning\n [4] Random number cloning\n [5] Random gmail crack\n [0] Exit menu')
-			linex()
 			xd=input(' Choose an option: ')
 			if xd in ['1','01']:
 				clear()
