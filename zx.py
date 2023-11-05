@@ -299,8 +299,10 @@ def menu():
         try:
                 approval()
                 #clear()
-		print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
-			linex()
+                x = ("sex")
+                if x == ("sex"):
+                        print(' [1] File cloning\n [2] Create ids file\n [0] Exit menu')
+                        linex()
 			xd=input(' Choose an option: ')
 		#	os.system('xdg-open https://www.facebook.com/dr.paigham')
 			if xd in ['1','01']:
