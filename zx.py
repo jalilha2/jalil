@@ -296,8 +296,9 @@ def approval():
 
 
 def menu():
-	approval()
-			#clear()
+        try:
+                approval()
+                #clear()
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
 			linex()
