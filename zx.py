@@ -299,8 +299,7 @@ def menu():
         try:
                 approval()
                 #clear()
-		#	linex()
-			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
+		print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
 			linex()
 			xd=input(' Choose an option: ')
 		#	os.system('xdg-open https://www.facebook.com/dr.paigham')
