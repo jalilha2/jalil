@@ -295,9 +295,10 @@ def approval():
     print(error)                        
 
 
-def menu():        try:
+def menu():
+	try:
                 approval()
-                clear()
+                #clear()
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [4] INDIA RANDOM  \n [0] Exit menu')
 			linex()
