@@ -292,35 +292,30 @@ def approval():
       #time.sleep(1)
       #approval()
   except Exception as error:
-    print(error)
+    print(error)                        
+
+
 def menu():
-	try:
-		approval()
-		#clear()
-x = ("***")
-if x == ("***"):
-	print('[1] CRACK FILE ')
-	print('[2] RANDOM CRACK')
-	print('[3] CREAT FILE')
-	print('[0] EXIT ')
-	linex()
-	xd=input(' CHOOSE AN OPTION: ')
-	#os.system('xdg-open ')
-if xd in ['1','01']:
-	clear()
-	
-	print(' PUT FILE EXAMPLE :  /sdcard/jalil.txt.etc..')
-	linex()
-	file = input(' PUT FILE PATH\033[1;37m: ')
-	try:
-		fo = open(file,'r').read().splitlines()
-	except FileNotFoundError:
-	print(' FILE LOCATION NOT FOUND ')
-time.sleep(1)
-    menu()
-    clear()
-    print(' All method working ')
-    linex()
+			clear()
+		#	linex()
+			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
+			linex()
+			xd=input(' Choose an option: ')
+		#	os.system('xdg-open https://www.facebook.com/dr.paigham')
+			if xd in ['1','01']:
+				clear()
+				print(' Put file example:  /sdcard/File.txt  etc..')
+				linex()
+				file = input(' Put file path\033[1;37m: ')
+				try:
+					fo = open(file,'r').read().splitlines()
+				except FileNotFoundError:
+					print(' File location not found ')
+					time.sleep(1)
+					menu()
+				clear()
+				print(' All method working ')
+				linex()
 				print(' [1] METHOD (NEW ID)')
 				print(' [2] METHOD (MIX)')
 				linex()
