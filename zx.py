@@ -296,7 +296,8 @@ def approval():
 
 
 def menu():
-			clear()
+	approval()
+			#clear()
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
 			linex()
@@ -316,8 +317,8 @@ def menu():
 				clear()
 				print(' All method working ')
 				linex()
-				print(' [1] METHOD (NEW ID)')
-				print(' [2] METHOD (MIX)')
+				print(' [1] METHOD (NEW IDS)')
+				print(' [2] METHOD (MIX IDS)')
 				linex()
 				mthd=input(' Choose: ')
 				linex()
@@ -343,7 +344,7 @@ def menu():
 					clear()
 					total_ids = str(len(fo))
 					print(' Total account ids : \033[1;32m'+total_ids+f' ')
-					print(' \033[1;37mThe process is running in the background')
+					print(' \033[1;37mWait until the crack is complete ')
 					linex()
 					for user in fo:
 						ids,names = user.split('|')
