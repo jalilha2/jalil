@@ -294,7 +294,8 @@ def approval():
   except Exception as error:
     print(error)                        
 def menu():
-			#clear()
+			clear()
+			print(logo)
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
 			linex()
