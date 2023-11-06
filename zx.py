@@ -182,7 +182,7 @@ logo=(f"""{YELLOW}
  [\033[1;32m~\033[1;37m] Tool     : PAID
  [\033[1;32m~\033[1;37m] Version  : 1.0.1
 \033[1;37m--------------------------------------------------
- [\033[1;32m~\033[1;37m]\033[1;33mYOUR ACCOUNTs ARE SAVE IN:\033[1;32m/sdcard/JALIIIL/JALIIIL-OK.txt\033[1;37m
+ [\033[1;32m~\033[1;37m]\033[1;33mYOUR ACCOUNT ARE SAVE IN:\033[1;32m/sdcard/JALIIIL/JALIIIL-OK.txt\033[1;37m
 \033[1;37m--------------------------------------------------""")
 def linex():
 	print('\033[1;37m--------------------------------------------------')
@@ -272,13 +272,6 @@ def menu():
 					pcp.append('y')
 				else:
 					pcp.append('n')
-					print(' Do you went show Cookies (y/n): ')
-				linex()
-				cx=input(' Choose: ')
-				if cx in ['y','Y','yes','Yes','1']:
-					ck.append('y')
-				else:
-					ck.append('n')
 				with tred(max_workers=30) as crack_submit:
 					clear()
 					total_ids = str(len(fo))
