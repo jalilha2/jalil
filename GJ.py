@@ -190,7 +190,7 @@ def linex():
 
 def meyexudi():
 
-os.system ('clear')
+def clear():
 
 print(logo)
 
