@@ -287,7 +287,7 @@ def menu():
 						elif mthd in ['2','02']:
 							crack_submit.submit(api,ids,names,passlist)
 						elif mthd in ['3','03']:
-						 crack_submit.submit(sajid4,ids,passlist)
+						 crack_submit.submit(sajid4,names,ids,passlist)
 				print('\033[1;37m')
 				linex()
 				print(' The process has completed')
@@ -463,7 +463,7 @@ def gmail():
 #1method
 def api(ids,names,passlist):
 		try:
-			global ok,loop
+			global loop,oks,cps
 			sys.stdout.write('\r\r\033[1;37m [JALIIIL-M2] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
@@ -636,9 +636,8 @@ def ffb(ids,names,passlist):
 
 
 #method4
-def sajid4(ids,passlist):
-        global loop
-        global oks
+def sajid4(ids,names,passlist):
+        global loop,oks,cps
         sys.stdout.write('\r\r\033[1;37m [JALIIIL-M3] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
