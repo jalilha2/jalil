@@ -192,7 +192,8 @@ def meyexudi():
 	os.system ('clear')
 	print(logo)
 	
-	uuid= str(os.geteuid()) + str(os.getlogin()) id="-".join(uuid)
+	uuid= str(os.geteuid()) + str(os.getlogin())
+	id="-".join(uuid)
 	
 	try:
 		
