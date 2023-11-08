@@ -287,7 +287,7 @@ def menu():
 						elif mthd in ['2','02']:
 							crack_submit.submit(api,ids,names,passlist)
 						elif mthd in ['3','03']:
-       crack_submit.submit(api1,ids,names,passlist)
+							crack_submit.submit(api1,ids,names,passlist)
 						
 				print('\033[1;37m')
 				linex()
