@@ -200,8 +200,6 @@ def meyexudi():
 		httpCaht = requests.get('https://raw.githubusercontent.com/jalilha/jalil/main/jalil.txt')
 		
 		if id in httpCaht:
-def clear():
-	os.system('clear')
 	print(logo)
 A = '\x1b[1;97m' 
 B = '\x1b[1;96m' 
