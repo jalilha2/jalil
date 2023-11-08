@@ -187,7 +187,6 @@ logo=(f"""{YELLOW}
 def linex():
 	print('\033[1;37m--------------------------------------------------')
 #_________APPROVAL SYSTEM ADD________#
-APPROVAL SYSTEM ADD
 
 def meyexudi():
 
