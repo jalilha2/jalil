@@ -251,7 +251,6 @@ def menu():
 				linex()
 				print(' [1] METHOD (NEW ID)')
 				print(' [2] METHOD (MIX ID)')
-				print(' [2] METHOD (OLD ID)')
 				linex()
 				mthd=input(' Choose: ')
 				linex()
@@ -285,10 +284,7 @@ def menu():
 						if mthd in ['1','01']:
 							crack_submit.submit(ffb,ids,names,passlist)
 						elif mthd in ['2','02']:
-							crack_submit.submit(api,ids,names,passlist)
-						elif mthd in ['3','03']:
-							crack_submit.submit(api1,ids,names,passlist)
-						
+							crack_submit.submit(api,ids,names,passlist)			
 				print('\033[1;37m')
 				linex()
 				print(' The process has completed')
@@ -462,10 +458,10 @@ def gmail():
 		os.system('python GJ.py')
 #b-api method
 #1method
-def api1(ids,names,passlist):
+def api(ids,names,passlist):
 		try:
 			global ok,loop
-			sys.stdout.write('\r\r\033[1;37m [JALIIIL-M1] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
+			sys.stdout.write('\r\r\033[1;37m [JALIIIL-M2] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
 			fn = names.split(' ')[0]
 			try:
 				ln = names.split(' ')[1]
@@ -552,10 +548,10 @@ def api1(ids,names,passlist):
 			pass
 #m2
 #b-graph method		
-def api2(ids,names,passlist):
+def ffb(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [JALIIIL-M2] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [JALIIIL-M1] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
