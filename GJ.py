@@ -189,19 +189,16 @@ def linex():
 #_________APPROVAL SYSTEM ADD________#
 
 def meyexudi():
-
-os.system ('clear')
-
-print(logo)
-
-uuid= str(os.geteuid()) + str(os.getlogin()) id="-".join(uuid)
-
-try:
-
-httpCaht = requests.get('https://raw.githubusercontent.com/jalilha/jalil/main/jalil.txt')
-
-if id in httpCaht:
-print(logo)
+	os.system ('clear')
+	print(logo)
+	
+	uuid= str(os.geteuid()) + str(os.getlogin()) id="-".join(uuid)
+	
+	try:
+		
+		httpCaht = requests.get('https://raw.githubusercontent.com/jalilha/jalil/main/jalil.txt')
+		
+		if id in httpCaht:
 A = '\x1b[1;97m' 
 B = '\x1b[1;96m' 
 C = '\x1b[1;91m' 
