@@ -186,20 +186,8 @@ logo=(f"""{YELLOW}
 \033[1;37m--------------------------------------------------""")
 def linex():
 	print('\033[1;37m--------------------------------------------------')
-#_________APPROVAL SYSTEM ADD________#
-
-def meyexudi():
-	os.system ('clear')
-	print(logo)
-	
-	uuid= str(os.geteuid()) + str(os.getlogin())
-	id="-".join(uuid)
-	
-	try:
-		
-		httpCaht = requests.get('https://raw.githubusercontent.com/jalilha/jalil/main/jalil.txt')
-		
-		if id in httpCaht:
+def clear():
+	os.system('clear')
 	print(logo)
 A = '\x1b[1;97m' 
 B = '\x1b[1;96m' 
